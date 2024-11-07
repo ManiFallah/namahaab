@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/auth.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <header>
+      <nav>
+        <img src="/assets/images/icon.svg" alt="" />
+        <div class="searchBar">
+          <input type="text" placeholder="جستجو در میان محصولات" />
+          <button><i class="fa fa-search fa-2x"></i></button>
+        </div>
+        <button>
+          <i class="fa fa-user fa-3x"></i>
+        </button>
+        <button>
+          <i class="fa fa-home fa-3x"></i>
+        </button>
+        <button>
+          <i class="fa fa-question fa-3x"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <button style="display: none" onclick="goToBuyer()" class="buyerBtn">
+        <i class="fa fa-shopping-cart fa-3x"></i>
+      </button>
+      <button style="display: none" onclick="goToSeller()" class="sellerBtn">
+        <i class="fa fa-users fa-3x"></i>
+      </button>
+      <div class="choose">
+        <div>
+          <div>
+            <i class="fa fa-users fa-4x"></i>
+          </div>
+          <button onclick="chooseSeller()">فروشنده</button>
+        </div>
+        <div>
+          <div>
+            <i class="fa fa-shopping-cart fa-5x"></i>
+          </div>
+          <button onclick="chooseBuyer()">خریدار</button>
+        </div>
+      </div>
+      <!------------------------------------------------------------------------------------------->
+      <div style="display: none" class="sellerLogin">
+        <div>
+          <div></div>
+          <button onclick="slide()" class="login">ورود</button>
+        </div>
+        <div>
+          <div></div>
+          <button onclick="slide()" class="signUp">ثبت نام</button>
+        </div>
+      </div>
+      <div style="display: none" class="loginForm">
+        <h1>ورود فروشنده</h1>
+        <label for="username">نام کاربری یا شماره تماس</label>
+        <input id="username" type="text" />
+        <label for="pass">رمز ورود</label>
+        <input type="password" id="pass" />
+        <a href=""></a>
+        <h1 style="display: none">ثبت نام فروشنده</h1>
+        <label style="display: none" for="tel">شماره تماس</label>
+        <input style="display: none" type="tel" id="tel" />
+        <label style="display: none" for="signUpPass">رمز ورود</label>
+        <input style="display: none" type="text" id="signUpPass" />
+        <label style="display: none" for="checkPass">تکرار رمز ورود</label>
+        <input style="display: none" type="text" id="checkPass" />
+        <button class="submit">ثبت</button>
+      </div>
+      <!--------------------------------------------------------- -->
+      <div style="display: none" class="buyerLogin">
+        <div>
+          <div></div>
+          <button class="buyerLoginBtn" onclick="Buyerslide()">ورود</button>
+        </div>
+        <div>
+          <div></div>
+          <button class="buyerSignUpBtn" onclick="Buyerslide()">ثبت نام</button>
+        </div>
+      </div>
+      <div style="display: none" class="buyerLoginForm">
+        <h1>ورود خریدار</h1>
+        <label for="username">نام کاربری یا شماره تماس</label>
+        <input id="username" type="text" />
+        <label for="pass">رمز ورود</label>
+        <input type="password" id="pass" />
+        <a href=""></a>
+        <h1 style="display: none">ثبت نام خریدار</h1>
+        <label style="display: none" for="tel">شماره تماس</label>
+        <input style="display: none" type="tel" id="tel" />
+        <label style="display: none" for="signUpPass">رمز ورود</label>
+        <input style="display: none" type="text" id="signUpPass" />
+        <label style="display: none" for="checkPass">تکرار رمز ورود</label>
+        <input style="display: none" type="text" id="checkPass" />
+        <button class="submit">ثبت</button>
+      </div>
+    </main>
+    <script>
+      particlesJS.load("particles-js", "../particlesjs-config.json");
+      particlesJS.load(
+        "footer-particle-js",
+        "../footer-particlesjs-config.json"
+      );
+    </script>
+    <script src="/assets/js/auth.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

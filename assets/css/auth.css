@@ -1,0 +1,501 @@
+@font-face {
+  font-family: "Byekan";
+  src: url("../fonts/BYekan+.ttf");
+}
+@font-face {
+  font-family: "Vazir-Bold";
+  src: url("../fonts/Vazir-Bold.ttf");
+}
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir.ttf");
+}
+@font-face {
+  font-family: "iranSans";
+  src: url("../fonts/IranianSans.ttf");
+}
+/* Fonts End*/
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100svw;
+  height: 100svh;
+  justify-content: space-between;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Basics end*/
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: top;
+}
+nav img {
+  margin-left: 15px;
+  margin-top: 17px;
+  width: 59.58px;
+  height: 60px;
+}
+nav > button {
+  margin-right: 10px;
+  margin-top: 22px;
+  width: 58px;
+  height: 58px;
+  background-color: #efbf04;
+  border-radius: 16px;
+  border: 1px;
+  border-color: #efbf04;
+}
+.searchBar {
+  width: 250px;
+  height: 58px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 22px;
+  border: 2px solid #9ea3ad;
+  border-radius: 16px;
+  border-color: #9ea3ad;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.searchBar input {
+  background: none;
+  border: none;
+  line-height: 18.15px;
+  font-size: 15px;
+  font-weight: 100;
+  color: #9ea3ad97;
+  font-family: "Byekan";
+  height: 100%;
+  text-align: center;
+}
+.searchBar input::placeholder {
+  color: #9ea3ad97;
+}
+.searchBar button {
+  width: 28px;
+  height: 28px;
+  background: none;
+  border: none;
+}
+.searchBar button i {
+  color: #efbf04;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+  background-color: #00040d;
+}
+/* NavBar End  */
+main {
+  /* background-color: white; */
+  transform: translate(-50% -50%);
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main > div {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50svw;
+  height: 80%;
+  border-radius: 20px;
+}
+/* Main End*/
+
+.choose div:first-of-type {
+  width: 50%;
+  height: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #efbf04;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose div:first-of-type div {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  margin-bottom: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d121f;
+}
+.choose div:first-of-type button {
+  background: none;
+  border: none;
+  color: #0d121f;
+  cursor: pointer;
+  font-family: "Vazir-bold";
+  font-size: 45px;
+}
+.choose div:first-of-type div i {
+  color: #efbf04;
+}
+.choose div:last-of-type {
+  width: 50%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #0d121f;
+  display: flex;
+  transition: all 2s ease-in;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose div:last-of-type div {
+  width: 170px;
+  border: none;
+  height: 170px;
+  margin-bottom: 25%;
+  border-radius: 50%;
+  transition: all 2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efbf04;
+}
+.choose div:last-of-type div i {
+  color: #0d121f;
+}
+.choose div:last-of-type button {
+  background: none;
+  border: none;
+  color: #efbf04;
+  font-family: "Vazir-bold";
+  font-size: 45px;
+  cursor: pointer;
+}
+.choose button {
+  transition: 1s;
+}
+.choose button:hover {
+  transform: scale(1.35);
+}
+/* Choose Between Two End */
+.buyerBtn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 70px;
+  height: 70px;
+  background-color: #efbf04;
+  border: none;
+  border-radius: 50%;
+}
+.sellerBtn {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 70px;
+  height: 70px;
+  background-color: #efbf04;
+  border: none;
+  border-radius: 50%;
+}
+.sellerLogin {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50svw;
+  height: 80%;
+  border-radius: 20px;
+  margin-right: -100svw;
+}
+.sellerLogin > div {
+  transition: all 2s ease-in;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.sellerLogin > div:first-of-type div {
+  background-image: url("/assets/images/sep.png");
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  animation: fadeBackground 0.8s;
+  animation-fill-mode: forwards;
+}
+.sellerLogin > div:nth-of-type(2) div {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: none;
+  background-size: cover;
+  transition: all 2s ease-in;
+}
+.sellerLogin > div:nth-of-type(2) button {
+  position: absolute;
+  bottom: 10%;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 2px #0d121fa6;
+  left: 150%;
+  background-color: #0d121f;
+  border-radius: 16px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  color: #f3d86af6;
+  transform: translateX(-50%);
+  font-family: "Vazir";
+  font-weight: 400;
+  transition: 0.5s;
+  z-index: 1;
+}
+button {
+  cursor: pointer;
+}
+.sellerLogin > div:first-of-type button {
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 2px #0d121fa6;
+  left: -50%;
+  background-color: #0d121f;
+  border-radius: 16px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  color: #f3d86af6;
+  transform: translateX(-50%);
+  font-family: "Vazir";
+  font-weight: 400;
+  transition: 0.5s;
+  z-index: -2;
+}
+.sellerLogin > div:nth-of-type(2) button:hover {
+  font-weight: bold;
+  width: 120px;
+  height: 60px;
+  bottom: 8%;
+  box-shadow: 0px 0px 2px 3px #0d121fa6;
+}
+.sellerLogin > div:nth-of-type(1) button:hover {
+  font-weight: bold;
+  width: 120px;
+  height: 60px;
+  bottom: 8%;
+  box-shadow: 0px 0px 2px 3px #0d121fa6;
+}
+.loginForm {
+  width: 50svw;
+  height: 100%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -34%;
+  bottom: 0;
+}
+.loginForm label {
+  font-family: "vazir";
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.loginForm input {
+  height: 40px;
+  border: 3px solid #9ea3ad;
+  background: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.loginForm input:focus {
+  outline: none;
+  stroke: none;
+}
+.loginForm button {
+  width: 120px;
+  height: 40px;
+  background-color: #efbf04;
+  border-radius: 16px;
+  border: none;
+  font-family: "Vazir";
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.loginForm h1 {
+  font-family: "Vazir";
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #efbf04;
+}
+/* Seller Section End*/
+.buyerLogin {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50svw;
+  height: 80%;
+  border-radius: 20px;
+  margin-left: -100svw;
+}
+.buyerLogin > div {
+  transition: all 2s ease-in;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.buyerLogin > div:first-of-type div {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.buyerLogin > div:nth-of-type(2) div {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  filter: blur(3px);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/assets/images/sep.png");
+  background-size: cover;
+  transition: all 2s ease-in;
+}
+
+.buyerLogin > div:nth-of-type(2) button {
+  position: absolute;
+  bottom: 10%;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 2px #0d121fa6;
+  left: 50%;
+  background-color: #0d121f;
+  border-radius: 16px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  color: #f3d86af6;
+  transform: translateX(-50%);
+  font-family: "Vazir";
+  font-weight: 400;
+  transition: 0.5s;
+  z-index: 2;
+}
+.buyerLogin > div:first-of-type button {
+  position: absolute;
+  z-index: 1;
+  bottom: 10%;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px 2px #0d121fa6;
+  left: 50%;
+  background-color: #0d121f;
+  border-radius: 16px;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  color: #f3d86af6;
+  transform: translateX(-50%);
+  font-family: "Vazir";
+  font-weight: 400;
+  transition: 0.5s;
+  z-index: -2;
+}
+.buyerLogin > div:nth-of-type(2) button:hover {
+  font-weight: bold;
+  width: 120px;
+  height: 60px;
+  bottom: 8%;
+  box-shadow: 0px 0px 2px 3px #0d121fa6;
+}
+.buyerLogin > div:nth-of-type(1) button:hover {
+  font-weight: bold;
+  width: 120px;
+  height: 60px;
+  bottom: 8%;
+  box-shadow: 0px 0px 2px 3px #0d121fa6;
+}
+.buyerLoginForm {
+  width: 50svw;
+  height: 100%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -34%;
+  bottom: 0;
+}
+.buyerLoginForm label {
+  font-family: "vazir";
+  color: white;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.buyerLoginForm input {
+  height: 40px;
+  border: 3px solid #9ea3ad;
+  background: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.buyerLoginForm input:focus {
+  outline: none;
+  stroke: none;
+}
+.buyerLoginForm button {
+  width: 120px;
+  height: 40px;
+  background-color: #efbf04;
+  border-radius: 16px;
+  border: none;
+  font-family: "Vazir";
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.buyerLoginForm h1 {
+  font-family: "Vazir";
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #efbf04;
+}
+/* Buyer Section End */
